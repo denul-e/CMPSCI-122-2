@@ -1,1 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    const int bonus = 10;
+    int exam1;
+    int exam2;
+    int score;
+
+    // Prompt the user for the first exam score
+    printf("Enter the score for Exam 1: ");
+    scanf("%d", &exam1);
+
+    // Prompt the user for the second exam score
+    printf("Enter the score for Exam 2: ");
+    scanf("%d", &exam2);
+
+    // Calculate the total score
+    score = (exam1 + exam2) / 2 + bonus;
+
+    // Print the calculated score
+    printf("score = %d\n", score);
+
+    return 0;
+}
 
