@@ -1,1 +1,24 @@
+#include <iostream>
+using namespace std;
+
+char letter;
+
+int main() {
+    // Prompt the user for input
+    cout << "Enter a character (enter '*' to stop): ";
+    cin >> letter;
+
+    while (letter != '*') {
+        if (letter == ' ') {
+            cout << endl;
+        } else {
+            cout << letter;
+        }
+        // Prompt the user again for input
+        cout << "\nEnter a character (enter '*' to stop): ";
+        cin >> letter;
+    }
+
+    return 0;
+}
 
